@@ -1,0 +1,23 @@
+h1 {
+    font-size: 2em;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.tagline {
+    font-size: 16px;
+}
+
+.self {
+    width: 100%;
+    height: auto;
+}
+
+.home-top {
+    display: flex;
+    flex-direction: row;
+}
+
+.me {
+    width: 60%;
+}
