@@ -1,23 +1,246 @@
+/* Apply styles to the container */
+.home-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(171, 179, 202, 0.769);
+    width: 100%;
+}
+
+/* Style the image */
+.me img {
+    border-radius: 50%; /* Make the image round */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+}
+
+/* Style the text content */
+.home-top div {
+    margin-left: 20px; /* Add some space between the image and text */
+}
+
 h1 {
-    font-size: 2em;
-    text-decoration: none;
-    font-weight: normal;
+    color: #333; /* Set the heading text color */
 }
 
 .tagline {
-    font-size: 16px;
+    color: #666; /* Set the tagline text color */
+    font-style: italic;
 }
 
-.self {
-    width: 100%;
-    height: auto;
+/* Apply styles to the bio container */
+.bio {
+    max-width: 800px; /* Set a maximum width for better readability */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px;
 }
 
-.home-top {
-    display: flex;
-    flex-direction: row;
+/* Style the heading */
+h2 {
+    color: #333; /* Set the heading text color */
 }
 
-.me {
-    width: 60%;
+/* Style the bio data list */
+.bio-data ul {
+    list-style: none;
+    padding: 0;
+}
+
+.bio-data li {
+    margin-bottom: 10px;
+}
+
+/* Style the about paragraphs */
+.about {
+    line-height: 1.6; /* Increase line height for better readability */
+    margin-bottom: 20px;
+}
+
+/* Apply styles to the emphasized text within the list */
+.bio-data li em {
+    font-style: normal; /* Remove italic style for emphasis */
+    font-weight: bold; /* Add bold style for emphasis */
+}
+
+/* Add a border to separate bio data from about paragraphs */
+.bio-data {
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+/* Style the education container */
+.education {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style the heading */
+.education h2 {
+    color: #333;
+}
+
+/* Style each school section */
+.school {
+    margin-bottom: 30px;
+}
+
+/* Style school names */
+.school h3 {
+    color: #007BFF; /* Set a color for the school names */
+}
+
+/* Style date and certificate information */
+.school p {
+    margin: 5px 0;
+}
+
+/* Emphasize relevant coursework, courses, and awards */
+.school em {
+    font-style: normal;
+    font-weight: bold;
+}
+
+/* Add space between activities and awards */
+.school p:has(em:contains("Activities")), .school p:has(em:contains("Awards")) {
+    margin-top: 10px;
+}
+
+/* Style the link to CodePath */
+.school cite a {
+    color: #007BFF;
+    text-decoration: none;
+    border-bottom: 1px dashed #007BFF;
+}
+
+.school cite a:hover {
+    border-bottom: 1px solid #007BFF;
+}
+
+/* Style the experience container */
+.experience {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style the heading */
+.experience h2 {
+    color: #333;
+}
+
+/* Style each work experience section */
+.work {
+    margin-bottom: 30px;
+}
+
+/* Style the company names */
+.work h3 {
+    color: #007BFF; /* Set a color for the company names */
+}
+
+/* Style job title and date */
+.work p {
+    margin: 5px 0;
+}
+
+/* Emphasize job titles and dates */
+.work em {
+    font-style: normal;
+    font-weight: bold;
+}
+
+/* Style the bullet points in the experience list */
+.work ul {
+    list-style-type: disc;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.work li {
+    margin-bottom: 5px;
+}
+
+/* Style the container for Projects and Skills */
+.projects,
+.skills {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style the headings for Projects and Skills */
+.projects h2,
+.skills h2 {
+    color: #333;
+}
+
+/* Style the ordered list for Projects */
+.projects ol {
+    list-style-type: decimal;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* Style the list items for Projects */
+.projects li {
+    margin-bottom: 15px;
+}
+
+/* Style the paragraph for Skills */
+.skills p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Emphasize keywords in the Skills paragraph */
+.skills p em {
+    font-style: normal;
+    font-weight: bold;
+}
+
+/* Style the contacts container */
+.contacts {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style the anchor tags (links) */
+.contacts a {
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Style the images */
+.contacts img {
+    width: 48px; /* Set the width of the images */
+    height: 48px; /* Set the height of the images */
+}
+
+/* Style the cite tags (link descriptions) */
+.contacts cite {
+    display: block;
+    margin-top: 5px;
+    color: #777;
+}
+
+/* Style the links on hover */
+.contacts a:hover {
+    color: #007BFF; /* Change the color on hover */
+}
+
+/* Style the links' hover underline */
+.contacts a:hover img {
+    border-bottom: 2px solid #007BFF;
+}
+
+@media (width < 800px){
+
 }
