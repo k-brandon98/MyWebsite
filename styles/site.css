@@ -1,6 +1,7 @@
-body{
+body {
     margin: 0px;
     background-color: #C1C8E4;
+    padding: 0px;
 }
 
 p {
@@ -22,37 +23,45 @@ p {
 
 /* Style the image */
 .me img {
-    border-radius: 50%; /* Make the image round */
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+    border-radius: 50%;
+    /* Make the image round */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    /* Add a subtle shadow */
 }
 
 /* Style the text content */
 .home-top div {
-    margin-left: 20px; /* Add some space between the image and text */
+    margin-left: 20px;
+    /* Add some space between the image and text */
 }
 
 h1 {
-    color: aliceblue; /* Set the heading text color */
+    color: aliceblue;
+    /* Set the heading text color */
     font-weight: normal;
     font-size: 3.5em;
 }
 
 .tagline {
-    color: white; /* Set the tagline text color */
+    color: white;
+    /* Set the tagline text color */
     font-style: italic;
     font-size: 20px;
 }
 
 /* Apply styles to the bio container */
 .bio {
-    max-width: 100%; /* Set a maximum width for better readability */
-    margin: 0 auto; /* Center the container horizontally */
-    padding: 20px;    
+    max-width: 100%;
+    /* Set a maximum width for better readability */
+    margin: 0 auto;
+    /* Center the container horizontally */
+    padding: 20px;
 }
 
 /* Style the heading */
 h2 {
-    color: #333; /* Set the heading text color */
+    color: #333;
+    /* Set the heading text color */
 }
 
 .bio2 {
@@ -73,12 +82,13 @@ h2 {
 
 .bio-data li {
     padding: 14px 0px;
-    border-bottom: solid 1px rgba(0,0,0,.1);
+    border-bottom: solid 1px rgba(0, 0, 0, .1);
 }
 
 /* Style the about paragraphs */
 .about {
-    line-height: 1.6; /* Increase line height for better readability */
+    line-height: 1.6;
+    /* Increase line height for better readability */
     margin-bottom: 20px;
     max-width: 800px;
     width: 75%;
@@ -87,8 +97,10 @@ h2 {
 
 /* Apply styles to the emphasized text within the list */
 .bio-data li em {
-    font-style: normal; /* Remove italic style for emphasis */
-    font-weight: bold; /* Add bold style for emphasis */
+    font-style: normal;
+    /* Remove italic style for emphasis */
+    font-weight: bold;
+    /* Add bold style for emphasis */
 }
 
 /* Add a border to separate bio data from about paragraphs */
@@ -120,7 +132,8 @@ h2 {
 
 /* Style school names */
 .school h3 {
-    color: white; /* Set a color for the school names */
+    color: white;
+    /* Set a color for the school names */
 }
 
 /* Style date and certificate information */
@@ -135,7 +148,8 @@ h2 {
 }
 
 /* Add space between activities and awards */
-.school p:has(em:contains("Activities")), .school p:has(em:contains("Awards")) {
+.school p:has(em:contains("Activities")),
+.school p:has(em:contains("Awards")) {
     margin-top: 10px;
 }
 
@@ -171,7 +185,8 @@ h2 {
 
 /* Style the company names */
 .work h3 {
-    color: white; /* Set a color for the company names */
+    color: white;
+    /* Set a color for the company names */
 }
 
 /* Style job title and date */
@@ -253,8 +268,10 @@ h2 {
 
 /* Style the images */
 .contacts img {
-    width: 48px; /* Set the width of the images */
-    height: 48px; /* Set the height of the images */
+    width: 48px;
+    /* Set the width of the images */
+    height: 48px;
+    /* Set the height of the images */
 }
 
 /* Style the cite tags (link descriptions) */
@@ -266,7 +283,8 @@ h2 {
 
 /* Style the links on hover */
 .contacts a:hover {
-    color: #007BFF; /* Change the color on hover */
+    color: #007BFF;
+    /* Change the color on hover */
 }
 
 /* Style the links' hover underline */
@@ -274,13 +292,15 @@ h2 {
     border-bottom: 2px solid #007BFF;
 }
 
-@media (width < 800px){
-    .home-top{
+@media (width < 800px) {
+    .home-top {
         flex-direction: column;
+        height: auto;
+        padding-top: 15%;
     }
 
     .me img {
-        width: 90%;
+        width: 100%;
         height: auto;
     }
 
@@ -288,43 +308,53 @@ h2 {
         flex-direction: column;
     }
 
-    .bio-data, .about {
+    .bio-data,
+    .about {
         width: 100%;
     }
 }
 
+@media screen and (min-width: 800px) {
 
-/* Define a keyframe animation called 'fadeInUp' */
-@keyframes fadeInUp {
-    from {
+    /* Define a keyframe animation called 'fadeInUp' */
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(9%);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Apply the animation to the 'home-top' and 'bio' sections */
+    .home-top {
+        animation: fadeInUp 2s ease-out;
+        /* Use the 'fadeInUp' animation with a duration of 1.5 seconds and ease-out timing function */
         opacity: 0;
-        transform: translateY(9%);
+        /* Set initial opacity to 0 */
     }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
-/* Apply the animation to the 'home-top' and 'bio' sections */
-.home-top {
-    animation: fadeInUp 2s ease-out; /* Use the 'fadeInUp' animation with a duration of 1.5 seconds and ease-out timing function */
-    opacity: 0; /* Set initial opacity to 0 */
+
+    .home-top:not(.animated) {
+        opacity: 0;
+        /* Set initial opacity to 0 for elements not yet animated */
+        animation: fadeInUp 2s ease-out forwards;
+        /* Use the 'fadeInUp' animation with a duration of 1.5 seconds and ease-out timing function */
+    }
+
+    /* Add a class to mark elements that have been animated */
+    .home-top.animated {
+        opacity: 1;
+        /* Ensure the final state remains visible after the animation ends */
+    }
 }
 
 /* Adjust the opacity for mobile devices to avoid triggering the animation on page load */
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
     .home-top {
         opacity: 1;
     }
-}
-
-.home-top:not(.animated){
-    opacity: 0; /* Set initial opacity to 0 for elements not yet animated */
-    animation: fadeInUp 2s ease-out forwards; /* Use the 'fadeInUp' animation with a duration of 1.5 seconds and ease-out timing function */
-}
-
-/* Add a class to mark elements that have been animated */
-.home-top.animated{
-    opacity: 1; /* Ensure the final state remains visible after the animation ends */
-}
+} */
