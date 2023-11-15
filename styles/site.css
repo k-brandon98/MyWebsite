@@ -3,6 +3,7 @@ body {
     background-color: #C1C8E4;
     padding: 0px;
     color: azure;
+    font-family: 'Poppins', sans-serif;
 }
 
 p {
@@ -23,7 +24,7 @@ p {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0px;
+    padding-left: 0 10;
     background-color: rgba(255, 255, 255, 0);
     /* background-image: linear-gradient(to bottom left, #5AB9EA, #8860D0, #5680E9); */
     width: 100%;
@@ -49,6 +50,7 @@ h1 {
     /* Set the heading text color */
     font-weight: normal;
     font-size: 3.5em;
+    font-family: 'PP Neue Machina', sans-serif;
 }
 
 .tagline {
