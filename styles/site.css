@@ -2,6 +2,7 @@ body {
     margin: 0px;
     background-color: #C1C8E4;
     padding: 0px;
+    color: azure;
 }
 
 p {
@@ -176,6 +177,7 @@ h2 {
 .experience {
     max-width: 800px;
     margin: 0 auto;
+    margin-bottom: 20px;
     padding: 10px;
     background-image: linear-gradient(to top right, #44318D, #5AB9EA);
     color: #C1C8E4;
@@ -224,7 +226,9 @@ h2 {
 .skills {
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-image: linear-gradient(to top right, #44318D, #5AB9EA);
 }
 
 /* Style the headings for Projects and Skills */
@@ -249,7 +253,7 @@ h2 {
 .skills p {
     line-height: 1.6;
     margin-bottom: 20px;
-    color: #555;
+    color: azure;
 }
 
 /* Emphasize keywords in the Skills paragraph */
@@ -297,7 +301,7 @@ h2 {
 
 /* Style the links' hover underline */
 .contacts a:hover img {
-    border-bottom: 2px solid #007BFF;
+    transform: scale(1.1);
 }
 
 @media (width < 800px) {
