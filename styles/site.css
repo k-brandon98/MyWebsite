@@ -2,7 +2,7 @@ body {
     margin: 0px;
     background-color: #C1C8E4;
     padding: 0px;
-    color: azure;
+    color: white;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -128,7 +128,7 @@ h2 {
     margin-bottom: 20px;
     padding: 10px;
     background-image: linear-gradient(to top right, #44318D, #5AB9EA);
-    color: #C1C8E4;
+    color: azure;
 }
 
 /* Style the heading */
@@ -143,7 +143,7 @@ h2 {
 
 /* Style school names */
 .school h3 {
-    color: white;
+    color: rgb(226, 165, 241);
     /* Set a color for the school names */
 }
 
@@ -182,7 +182,7 @@ h2 {
     margin-bottom: 20px;
     padding: 10px;
     background-image: linear-gradient(to top right, #44318D, #5AB9EA);
-    color: #C1C8E4;
+    color: whitesmoke;
 }
 
 /* Style the heading */
