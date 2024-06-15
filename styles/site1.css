@@ -115,6 +115,46 @@ h2, h3 {
     margin-bottom: 1em;
 }
 
+.school {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 2em;
+}
+
+.logo {
+    max-width: 30%;
+    margin: 0.5em;
+    flex: 0 0 200px; /* Fixed width for logo container */
+    margin-right: 1em;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.projects figure {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+.projects img {
+    width: 20%;
+    margin: 0.5em;
+    border-radius: 10%;
+}
+
+.projects img:hover {
+    border-radius: 30%;
+}
+
+.hidden {
+    display: none;
+}
+
 .contacts {
     padding: 2em;
     margin: 1em auto;

@@ -65,32 +65,31 @@
     <div class="education">
         <h2>My Education</h2>
         <div class="school">
-            <h3>Cornell University</h3>
-            <p>2022 - present</p>
-            <p><em>Major:</em> Computer Science</p>
-            <p><em>Minor:</em> Data Science</p>
-            <p>
-                <em>Relevant Coursework:</em> Intro to Computers and Computing 
-                with Python, Object-Oriented Programming with Java, Data 
-                Structures, Discrete Mathematics, Probability, Web Design and 
-                Programming, Calculus, Linear Algebra, Functional Programming 
-                and Computational Linguistics.
-            </p>
-            <p><em>Activities:</em> URMC, EAST, ACSU, ColorStack Member, 
-                William H. and Ruth M. Morgan Student Endowment</p>
+            <figure class="logo">
+                <img src="images/cornell-red-logo.jpeg" alt="Cornell Logo">
+            </figure>
+            <div>
+                <h3>Cornell University</h3>
+                <p>2022 - present</p>
+                <p><em>Major:</em> Computer Science</p>
+                <p><em>Minor:</em> Data Science</p>
+                <p>
+                    <em>Relevant Coursework:</em> Intro to Computers and Computing 
+                    with Python, Object-Oriented Programming with Java, Data 
+                    Structures, Discrete Mathematics, Probability, Web Design and 
+                    Programming, Calculus, Linear Algebra, Functional Programming 
+                    and Computational Linguistics.
+                </p>
+                <p><em>Activities:</em> URMC, EAST, ACSU, ColorStack Member, 
+                    William H. and Ruth M. Morgan Student Endowment</p>
+            </div>
         </div>
 
         <div class="school">
-            <h3>Alliance High School</h3>
-            <p>2017 - 2021</p>
-            <p>Kenya Certificate of Secondary Education</p>
-            <p><em>Courses:</em> Mathematics, English, Kiswahili, Physics, 
-                Chemistry, Biology, Geography, History, Computer Studies, French</p>
-            <p><em>Awards:</em> Cum Laude, House Captain, Carey Francis Math 
-                Contest Champion.</p>
-        </div>
-
-        <div class="school">
+            <figure class="logo">
+                <img src="images/codepath-logo.jpeg" alt="CodePath Logo">
+            </figure>
+            <div>
             <h3>CodePath: Fall 2023 Bootcamp</h3>
             <p>Pathway: Android Development</p>
             <p>In the process of learning Android development including the 
@@ -98,6 +97,22 @@
                 In addition, we learn the basics of making single-page apps 
                 that compute, list, and query the internet for data.</p>
             <cite><a href="https://www.codepath.org/courses/android-development"></a></cite>
+            </div>
+        </div>
+
+        <div class="school">
+            <figure class="logo">
+                <img src="images/alliance-logo.png" alt="Alliance Logo">
+            </figure>
+            <div>
+                <h3>Alliance High School</h3>
+                <p>2017 - 2021</p>
+                <p>Kenya Certificate of Secondary Education</p>
+                <p><em>Courses:</em> Mathematics, English, Kiswahili, Physics, 
+                    Chemistry, Biology, Geography, History, Computer Studies, French</p>
+                <p><em>Awards:</em> Cum Laude, House Captain, Carey Francis Math 
+                    Contest Champion.</p>
+            </div>
         </div>
     </div>
 
@@ -152,12 +167,16 @@
 
     <div class="projects">
         <h2>Projects</h2>
-        <ol>
-            <li>Sewer Navigation - Created a GUI game in Java with a playable character, McDiver, who must collect a ring at the center of a maze. Implemented Dijkstra's Algorithm to find the shortest distance through a maze of underground tunnels to the ring's location. After completing this objective, McDiver used a greedy algorithm to collect as many coins as possible with limited steps before exiting the maze. Ranked among the top ten on the class leaderboard.</li>
-            <li>Find-A-Pet - Created an Android app that allows a user to search for pets to adopt based on search parameters such as age, species and location. The app makes a RESTful call to the PetFinder API. The app includes features such as Spinners, RecyclerViews, and Adapters.</li>
-            <li>Image Filters - Worked with a partner to design a simple program that opens images and edits them. Adopted the use of multidimensional lists to represent pixels in a photo and thereby modify them. Created simple filters and edits such as vignettes, negatives, rotating, and black and white filters. Finally, we incorporated steganography into our program, encoding and decoding words in images.</li>
-            <li>MiniBank - Created a database system in OCaml using Sqlite3. The system is a mini banking system with tellers and customers interacting to deposit, withdraw and transfer funds from account(s). </li>
-        </ol>
+        <figure>
+            <img id="sewerImg" src="images/mcdiver.png" alt="A screenshot of the sewer navigation game">
+            <img id="petsImg" src="images/pets.jpeg" alt="An image showing several pets">
+            <img id="filtersImg" src="images/image-filters.jpeg" alt="An image of some screens with image editors">
+            <img id="bankImg" src="images/minibank.jpeg" alt="An image of a small bank called MiniBank">
+        </figure>
+            <p id="sewerTxt" class="hidden">Sewer Navigation - Created a GUI game in Java with a playable character, McDiver, who must collect a ring at the center of a maze. Implemented Dijkstra's Algorithm to find the shortest distance through a maze of underground tunnels to the ring's location. After completing this objective, McDiver used a greedy algorithm to collect as many coins as possible with limited steps before exiting the maze. Ranked among the top ten on the class leaderboard.</p>
+            <p id="petTxt" class="hidden">Find-A-Pet - Created an Android app that allows a user to search for pets to adopt based on search parameters such as age, species and location. The app makes a RESTful call to the PetFinder API. The app includes features such as Spinners, RecyclerViews, and Adapters.</p>
+            <p id="filtersTxt" class="hidden">Image Filters - Worked with a partner to design a simple program that opens images and edits them. Adopted the use of multidimensional lists to represent pixels in a photo and thereby modify them. Created simple filters and edits such as vignettes, negatives, rotating, and black and white filters. Finally, we incorporated steganography into our program, encoding and decoding words in images.</p>
+            <p id="bankTxt" class="hidden">MiniBank - Created a database system in OCaml using Sqlite3. The system is a mini banking system with tellers and customers interacting to deposit, withdraw and transfer funds from account(s). </p>
     </div>
 
     <div class="skills">
@@ -179,5 +198,8 @@
             <img src="images/github-icon.svg" alt="GitHub Logo" width="48" height="48">
         </a>
     </div>
+
+    <script src="scripts/jquery-3.7.1.js"></script>
+    <script src="scripts/projects.js"></script>
 </body>
 </html>
